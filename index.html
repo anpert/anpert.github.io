@@ -1,14 +1,71 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Hi — Teacher @ Luovi</title>
-    <meta name="description" content="Teacher at Luovi Vocational School in Oulu, Finland. Programming & Excel. Music and year-round cycling enthusiast." />
-    <meta property="og:title" content="Hi — Teacher @ Luovi" />
-    <meta property="og:description" content="Teacher at Luovi Vocational School in Oulu, Finland. Programming & Excel. Music and year-round cycling enthusiast." />
-    <meta property="og:type" content="website" />
-    <style>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hi — Teacher @ Luovi</title>
+  <meta name="description" content="Teacher at Luovi Vocational School in Oulu, Finland. Programming & Excel. Music and year-round cycling enthusiast." />
+  <meta property="og:title" content="Hi — Teacher @ Luovi" />
+  <meta property="og:description" content="Teacher at Luovi Vocational School in Oulu, Finland. Programming & Excel. Music and year-round cycling enthusiast." />
+  <meta property="og:type" content="website" />
+  <style>
     :root { --fg:#111; --bg:#fff; --muted:#555; --link:#0b5fff; --card:#f6f7f9; }
     @media (prefers-color-scheme: dark) {
-      :root { --fg:#eaeaea; --bg:#0c0d10; --muted:#9aa0a6; --lin
+      :root { --fg:#eaeaea; --bg:#0c0d10; --muted:#9aa0a6; --link:#82aaff; --card:#151821; }
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
+    .wrap{max-width:760px;margin:0 auto;padding:32px 20px}
+    header h1{font-size:2rem;margin:.2rem 0}
+    header p{margin:.2rem 0;color:var(--muted)}
+    a{color:var(--link);text-decoration:none}
+    a:hover,a:focus{text-decoration:underline}
+    .card{background:var(--card);border-radius:14px;padding:18px 18px}
+    h2{font-size:1.4rem;margin:1.6rem 0 .6rem}
+    ul{padding-left:1.1rem}
+    .muted{color:var(--muted)}
+    footer{margin-top:2rem;font-size:.9rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>👋 Hi there!</h1>
+      <p>I'm a teacher at <a href="https://www.luovi.fi" target="_blank" rel="noopener">Luovi Vocational School</a> in Oulu, Finland 🇫🇮 (EU).</p>
+    </header>
+
+    <section class="card">
+      <h2>What I teach</h2>
+      <p>I mainly teach <strong>programming</strong> and <strong>Excel</strong>.</p>
+      <p>Our study program can be found here:<br />
+        <a href="https://opintopolku.fi/konfo/en/toteutus/1.2.246.562.17.00000000000000005269" target="_blank" rel="noopener">
+          Luovi Study Program on Opintopolku
+        </a>
+      </p>
+    </section>
+
+    <section>
+      <h2>🎵 Hobbies</h2>
+      <p>I enjoy making music — playing instruments and singing in a choir.</p>
+      <p>I also cycle all year round 🚴‍♂️ — Oulu has one of the best cycling networks in Finland.</p>
+    </section>
+
+    <section>
+      <h2>📫 Contact</h2>
+      <ul>
+        <li><strong>Email:</strong> firstname.familyname &lt;at&gt; luovi.fi</li>
+        <li><strong>Pronouns:</strong> he / him / his</li>
+      </ul>
+      <p class="muted">Tip: replace <em>&lt;at&gt;</em> with <em>@</em> when emailing.</p>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> — Hosted on GitHub Pages</p>
+    </footer>
+  </main>
+
+  <script>
+    // Update year automatically
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
